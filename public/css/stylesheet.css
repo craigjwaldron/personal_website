@@ -1,0 +1,431 @@
+
+html {
+  width: 100%;
+  margin: 0 auto 0 auto;
+}
+
+body {
+   width: 100%;
+   height: 100%;
+   margin: 0px;
+   padding: 0px;
+   overflow-x: hidden;
+}
+
+i {
+  padding: 10px;
+}
+
+h3 {
+  padding-bottom: 10px;
+}
+
+hr {
+  width: 15em;
+}
+
+a {
+  color:inherit;
+  text-decoration: none;
+ }
+
+.ghost-button-transition {
+   display: inline-block;
+   width: 200px;
+   padding: 8px;
+   margin: 30px;
+   font-weight: lighter;
+   letter-spacing: 3px;
+   color: #fff;
+   border: 1px solid #fff;
+   text-align: center;
+   outline: none;
+   text-decoration: none;
+   transition: background-color 0.2s ease-out,
+               color 0.2s ease-out;
+}
+
+a:active {
+    color: yellow;
+}
+
+.ghost-button-transition:hover,
+.ghost-button-transition:active {
+   background-color: #f6f6f6;
+   color: #000;
+   transition: background-color 0.3s ease-in,
+               color 0.3s ease-in;
+   text-decoration: none;
+}
+
+.ghost-button-transition-2 {
+ display: inline-block;
+ width: 300px;
+ padding: 8px;
+ margin-left: 50px;
+ font-weight: lighter;
+ letter-spacing: 3px;
+ color: #A9A9A9;
+ border: 1px solid #A9A9A9;
+ text-align: center;
+ outline: none;
+ text-decoration: none;
+ transition: background-color 0.2s ease-out,
+             color 0.2s ease-out;
+  font-size: 16px;
+  margin-bottom: 3em;
+}
+
+.ghost-button-transition-2:hover,
+.ghost-button-transition-2:active {
+   color: white;
+   border: 1px solid #425462;
+   transition: background-color 0.3s ease-in,
+               color 0.3s ease-in;
+   text-decoration: none;
+   background-color: #425462;
+}
+
+.ghost-button-transition-3 {
+   display: inline-block;
+   width: 400px;
+   padding: 8px;
+   font-weight: lighter;
+   letter-spacing: 3px;
+   color: #A9A9A9;
+   border: 1px solid #A9A9A9;
+   text-align: center;
+   outline: none;
+   text-decoration: none;
+   transition: background-color 0.2s ease-out,
+               color 0.2s ease-out;
+}
+
+.ghost-button-transition-3:hover,
+.ghost-button-transition-3:active {
+   color: white;
+   border: 1px solid #425462;
+   transition: background-color 0.3s ease-in,
+               color 0.3s ease-in;
+   text-decoration: none;
+   background-color: #425462;
+}
+
+.fa-linkedin:hover {
+  color: #A9A9A9;
+  cursor: pointer;
+}
+
+.fa-github:hover {
+  color: #A9A9A9;
+  cursor: pointer;
+}
+
+.fa-codepen:hover{
+  color: #A9A9A9;
+  cursor: pointer;
+}
+
+.mainHeader {
+  font-family: 'Maven Pro', sans-serif;
+  padding: 0px;
+  margin: 0px;
+  font-weight: 100;
+}
+
+.nameHeader {
+  padding: 0px;
+  margin: 0px;
+  font-weight: 900;
+  letter-spacing: 3px;
+  font-size: 5em;
+  font-family: 'Maven Pro', sans-serif;
+}
+
+.subHeader {
+  color: #82A4BF;
+  font-weight: 100;
+  letter-spacing: 2px;
+  font-size: 26px;
+  font-family: 'Maven Pro', sans-serif;
+}
+
+.subHeader2 {
+  font-weight: 100;
+  letter-spacing: 1px;
+  font-size: 18px;
+  font-family: 'Maven Pro', sans-serif;
+}
+
+.repHeader {
+  padding: 50px;
+  margin: 0px;
+  font-weight: 100;
+  letter-spacing: 10px;
+  font-size: 20px;
+  font-family: 'Maven Pro', sans-serif;
+}
+
+.introDiv {
+  color: #FFFFFF;
+  text-align: center;
+  float: none;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 100px;
+  padding-bottom: 40px;
+}
+
+.skillsDiv {
+  background-color: #82A4BF;
+  text-align: center;
+  float: none;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/*skills image responsive*/
+.skillsPhoto {
+  max-width: 100%;
+  height: auto;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.projectDiv {
+  background-color: #425462;
+  margin-bottom: 10px;
+}
+
+.meDiv {
+  max-height: 100%;
+}
+
+.linkDiv{
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 20px;
+  background: #425462;
+  color: #82A4BF;
+}
+
+.selfPort {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  max-width:100%;
+  max-height:100%;
+}
+
+.projectLrg {
+  flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%
+}
+
+.aboutDiv {
+  background-color: #FFFFFF;
+  float: none;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 24px;
+  font-weight: 100;
+  font-family: 'Maven Pro', sans-serif;
+  max-width: 100%;
+  color: grey;
+}
+
+.selfText {
+  padding: 40px 50px 5px 50px;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.meTitle {
+  font-weight: bold;
+  color: #425462;
+  font-family: century gothic, gill sans;
+}
+
+.introMe {
+  color: #82A4BF;
+  font-size: 16px !important;
+  text-align: center;
+  float: none;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 10px;
+  padding-bottom: 40px;
+  width: 35em;
+  letter-spacing: 1px;
+}
+
+/*BOOTSTRAP CUSTOMIZATION*/
+
+.jumbotron {
+  background: #425462;
+  margin: 0px;
+  height:100vh;
+  font-family: 'Maven Pro', sans-serif;
+}
+
+.thumbnail:hover {
+  cursor: pointer;
+}
+
+.thumbnail {
+  border: 0 none;
+  box-shadow: none;
+  background-color: transparent;
+  padding: 0px;
+}
+
+.thumbnail .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  padding: 50px 20px;
+  margin-top: 50px;
+}
+
+.modal-title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  color: #425462;
+  font-family: century gothic, gill sans;
+  padding: 1em 0 1em 0;
+}
+
+.modal-body {
+  text-align: center;
+  padding: 0px;
+  margin: none;
+}
+
+.imageHeader {
+  display: block;
+  margin: auto;
+  max-width: 100%;
+  height: auto;
+}
+
+.app-modal-window .modal-dialog {
+  width: 500px;
+}
+
+.allProjects {
+ padding: 8% 10% 8% 10%;
+ background-color: #425462;
+}
+
+.col-md-4 {
+  margin: 0px;
+}
+
+.hovereffect {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+}
+
+.hovereffect .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  padding: 20px 20px;
+}
+
+.hovereffect img {
+  display: block;
+  position: relative;
+  max-width: none;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(-10px,0,0);
+  transform: translate3d(-10px,0,0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.hovereffect:hover img {
+  opacity: 0.1;
+  filter: alpha(opacity=40);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+.hovereffect h2 {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  font-size: 17px;
+  overflow: hidden;
+  padding: 0.5em 0;
+  background-color: transparent;
+}
+
+.hovereffect h2:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  content: '';
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+  -webkit-transform: translate3d(-100%,0,0);
+  transform: translate3d(-100%,0,0);
+}
+
+.hovereffect:hover h2:after {
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+.hovereffect a, .hovereffect p {
+  color: #FFF;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(100%,0,0);
+  transform: translate3d(100%,0,0);
+}
+
+.hovereffect:hover a, .hovereffect:hover p {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+.hovereffect a, .hovereffect h1 {
+  color: #FFF;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(0,100%,0);
+  transform: translate3d(0,100%,0);
+}
+
+.hovereffect:hover a, .hovereffect:hover h1 {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}

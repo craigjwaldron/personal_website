@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+
+<html ng-app="myApp">
+
+  <head>
+    <meta charset="utf-8">
+<!-- Sourcing -->
+    <script src="public/vendors/angular.js"></script>
+    <script src="public/vendors/jquery-2.2.4.min.js" charset="utf-8"></script>
+
+    <script src="public/vendors/angular-route.js" charset="utf-8"></script>
+    <script src="public/vendors/angular-animate.js" charset="utf-8"></script>
+    <script src="public/vendors/ui-bootstrap.js" charset="utf-8"></script>
+    <script src="public/vendors/angular-sanitize.js" charset="utf-8"></script>
+
+    <link rel="stylesheet" href="public/vendors/bootstrap.min.css" />
+    <link rel="stylesheet" href="public/css/stylesheet.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="public/vendors/font-awesome-4.6.3/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="public/assets/favicon.png"/>
+
+    <script src="public/scripts/script.js"></script>
+  </head>
+
+  <body>
+
+    <div class="linkDiv">
+      <a href="https://www.linkedin.com/in/waldroncraig"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
+      <a href="https://github.com/craigjwaldron"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+      <a href="https://codepen.io/craigdubya/"><i class="fa fa-codepen fa-2x" aria-hidden="true"></i></a>
+    </div>
+
+    <div class="jumbotron">
+      <div class="introDiv container">
+        <!-- <div class="page-header"> -->
+
+          <h1 class="nameHeader"> CRAIG WALDRON </h1>
+
+          <h3 class="subHeader"> SOFTWARE DEVELOPER </h3>
+
+        <!-- </div> -->
+        <div>
+          <a class="ghost-button-transition" href="#about" data-transition="slide" style="text-decoration:none;">ABOUT ME</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="aboutDiv" id="about">
+      <div class="meDiv row">
+          <img class="col-md-6 selfPort img-responsive" src="public/assets/photo_self.jpg" alt="" />
+        <div class="col-md-6 selfText">
+          <h2 class="meTitle">I HAVE AN EXTRAORDINARY PASSION FOR FUNCTIONALITY BLENDED WITH BEAUTY.</h2>
+          <p class="mePara"> I am a recent graduate of Prime Digital Academy where I earned a certificate in Full-Stack Development. Additionally, I have a background in graphic design and find great joy in combining my two skill sets. Please check out my repertoire below to see the technologies I have worked with. </p>
+        </div>
+        <div>
+          <a class="ghost-button-transition-2" href="#projects" data-transition="slide" style="text-decoration:none;">MY PROJECTS</a>
+        </div>
+      </div>
+      <div class="skillsDiv">
+        <img class="skillsPhoto" src="public/assets/skills.png" alt=""/>
+      </div>
+    </div>
+
+<!-- PROJECT THUMBNAIL LAYOUT -->
+<div id="projects" class="allProjects" ng-controller="ModalDemoCtrl as $ctrl">
+    <div class="row projectDiv">
+      <div class="col-md-6">
+        <div class="thumbnail hovereffect" ng-click="$ctrl.malia('lg')">
+          <img src="public/assets/malia.jpg" class="projectLrg">
+          <div class="overlay">
+            <h1>MALIA DRAGON BOAT RACING APPLICATION</h1>
+            <p>DISCOVER MORE</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="thumbnail hovereffect" ng-click="$ctrl.prosmash('lg')">
+          <img src="public/assets/prosmash.jpg" class="projectLrg">
+          <div class="overlay">
+            <h1>PROSMASH APPLICATION</h1>
+            <p>DISCOVER MORE</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- SECOND ROW     -->
+    <div class="row projectDiv">
+      <div class="col-md-4">
+        <div class="thumbnail hovereffect" ng-click="$ctrl.task('lg')">
+          <img src="public/assets/task_attack.jpg" class="projectsRight">
+          <div class="overlay">
+            <h1>TO-DO LIST APPLICATION</h1>
+            <p>DISCOVER MORE</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="thumbnail hovereffect" ng-click="$ctrl.calc('lg')">
+          <img src="public/assets/calc.jpg" class="projectsLeft">
+          <div class="overlay">
+            <h1>CALCULATOR APPLICATION</h1>
+            <p>DISCOVER MORE</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="thumbnail hovereffect" ng-click="$ctrl.youthRacing('lg')">
+          <img src="public/assets/yir_main.jpg">
+          <div class="overlay">
+            <h1>YOUTH RACING LOGO</h1>
+            <p>DISCOVER MORE</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- THIRD ROW     -->
+    <div class="row projectDiv">
+      <div class="col-md-4">
+        <div class="thumbnail hovereffect" ng-click="$ctrl.brochure('lg')">
+          <img src="public/assets/brochure.jpg">
+          <div class="overlay">
+            <h1>WELCOME BROCHURE</h1>
+            <p>DISCOVER MORE</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="thumbnail hovereffect" ng-click="$ctrl.mn('lg')">
+          <img src="public/assets/mn.jpg" class="projectsLeft">
+          <div class="overlay">
+            <h1>MN LOGO</h1>
+            <p>DISCOVER MORE</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="thumbnail hovereffect" ng-click="$ctrl.kids('lg')">
+          <img src="public/assets/kids.jpg">
+          <div class="overlay">
+            <h1>SUNDAY SCHOOL POSTCARD</h1>
+            <p>DISCOVER MORE</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- FOURTH ROW     -->
+        <div class="row projectDiv">
+          <div class="col-md-4">
+            <div class="thumbnail hovereffect" ng-click="$ctrl.graff('lg')">
+              <img src="public/assets/graff.jpg" class="projectsRight">
+              <div class="overlay">
+                <h1>GRAFFITI ART</h1>
+                <p>DISCOVER MORE</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="thumbnail hovereffect" ng-click="$ctrl.straw('lg')">
+              <img src="public/assets/straw.jpg" class="projectsLeft">
+              <div class="overlay">
+                <h1>STRAWBERRY ILLUSTRATION</h1>
+                <p>DISCOVER MORE</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="thumbnail hovereffect" ng-click="$ctrl.invite('lg')">
+              <img src="public/assets/cafe.jpg">
+              <div class="overlay">
+                <h1>CAFE INVITE</h1>
+                <p>DISCOVER MORE</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+<!-- FIFTH ROW     -->
+  <div class="row projectDiv">
+    <div class="col-md-4">
+      <div class="thumbnail hovereffect" ng-click="$ctrl.quench('lg')">
+        <img src="public/assets/quench.jpg" class="projectsRight">
+        <div class="overlay">
+          <h1>QUENCH LOGO</h1>
+          <p>DISCOVER MORE</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail hovereffect" ng-click="$ctrl.bound('lg')">
+        <img src="public/assets/bound.jpg" class="projectsLeft">
+        <div class="overlay">
+          <h1>PENCIL DRAWING</h1>
+          <p>DISCOVER MORE</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail hovereffect" ng-click="$ctrl.nexgen('lg')">
+        <img src="public/assets/nexgen.jpg">
+        <div class="overlay">
+          <h1>NEXGEN LOGO</h1>
+          <p>DISCOVER MORE</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FIFTH ROW     -->
+    <div class="row projectDiv">
+      <div class="col-md-4">
+        <div class="thumbnail hovereffect" ng-click="$ctrl.port('lg')">
+          <img src="public/assets/port.jpg" class="projectsRight">
+          <div class="overlay">
+            <h1>HANDMADE PORTFOLIO</h1>
+            <p>DISCOVER MORE</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="thumbnail hovereffect" ng-click="$ctrl.jayf('lg')">
+          <img src="public/assets/jayf.jpg" class="projectsLeft">
+          <div class="overlay">
+            <h1>SOFTBALL LOGO</h1>
+            <p>DISCOVER MORE</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="thumbnail hovereffect" ng-click="$ctrl.bob('lg')">
+          <img src="public/assets/bob.jpg">
+          <div class="overlay">
+            <h1>WHAT ABOUT BOB?</h1>
+            <p>DISCOVER MORE</p>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+<!-- =========== MALIA DRAGON BOAT RACING ========== -->
+
+      <div ng-controller="ModalDemoCtrl as $ctrl">
+          <script type="text/ng-template" id="maliaBoat.html">
+              <div class="modal-header">
+                  <h3 class="modal-title" id="modal-title">MALIA DRAGON BOAT RACING APPLICATION</h3>
+              </div>
+
+              <div class="modal-body" id="modal-body">
+                <h3><a class="ghost-button-transition-3" href="https://secure-shelf-37019.herokuapp.com/#/home" target="_blank" style="text-decoration:none;">LIVE APPLICATION DEMO</a></h3>
+                <img class="imageHeader" src="/assets/malia_2.jpg">
+                  <div class="modal-header">
+                    <h1 class="modal-title" id="modal-title">WIREFRAMES</h1>
+                  </div>
+                <img class="imageHeader" src="/assets/malia_mock.jpg">
+              </div>
+
+              <div class="modal-footer">
+                <button class="btn btn-primary" type="button" ng-click="$ctrl.ok()">BACK TO PROJECTS</button>
+              </div>
+          </script>
+      </div>
+
+<!-- =========== PROSMASH ========== -->
+
+    <div ng-controller="ModalDemoCtrl as $ctrl">
+        <script type="text/ng-template" id="proSmash.html">
+
+            <div class="modal-header">
+                <h3 class="modal-title" id="modal-title">PROSMASH APPLICATION</h3>
+            </div>
+            <div class="modal-body" id="modal-body">
+              <h3><a class="ghost-button-transition-3" href="https://prosmash.herokuapp.com/#/login" target="_blank" style="text-decoration:none;">LIVE APPLICATION DEMO</a></h3>
+              <img class="imageHeader" src="public/assets/prosmash_3.jpg">
+              <div class="modal-header">
+                <h1 class="modal-title" id="modal-title">WIREFRAMES</h1>
+              </div>
+              <img class="imageHeader" src="public/assets/prosmash_mock_1.jpg">
+              <img class="imageHeader" src="public/assets/prosmash_mock_2.jpg">
+
+            </div>
+
+            <div class="modal-footer">
+              <button class="btn btn-primary" type="button" ng-click="$ctrl.ok()">BACK TO PROJECTS</button>
+            </div>
+        </script>
+    </div>
+
+<!-- =========== TO-DO LIST ========== -->
+
+    <div ng-controller="ModalDemoCtrl as $ctrl">
+        <script type="text/ng-template" id="task.html">
+
+            <div class="modal-header">
+                <h3 class="modal-title" id="modal-title">TO-DO LIST APPLICATION</h3>
+            </div>
+
+            <div class="modal-body" id="modal-body">
+              <h3><a class="ghost-button-transition-3" href="https://task-attacker.herokuapp.com/" target="_blank" style="text-decoration:none;">LIVE APPLICATION DEMO</a></h3>
+              <img class="imageHeader" src="/assets/task_2.jpg">
+            </div>
+
+            <div class="modal-footer">
+              <button class="btn btn-primary" type="button" ng-click="$ctrl.ok()">BACK TO PROJECTS</button>
+            </div>
+        </script>
+    </div>
+
+<!-- =========== CALCULATOR ========== -->
+
+    <div ng-controller="ModalDemoCtrl as $ctrl">
+        <script type="text/ng-template" id="calc.html">
+
+            <div class="modal-header">
+                <h3 class="modal-title" id="modal-title">CALCULATOR APPLICATION</h3>
+            </div>
+
+            <div class="modal-body" id="modal-body">
+              <h3><a class="ghost-button-transition-3" href="https://damp-mountain-17377.herokuapp.com/" target="_blank" style="text-decoration:none;">LIVE APPLICATION DEMO</a></h3>
+              <img class="imageHeader" src="/assets/calc_2.jpg">
+            </div>
+
+            <div class="modal-footer">
+              <button class="btn btn-primary" type="button" ng-click="$ctrl.ok()">BACK TO PROJECTS</button>
+            </div>
+        </script>
+    </div>
+
+<!-- =========== YOUTH IMPACT RACING ========== -->
+
+      <div ng-controller="ModalDemoCtrl as $ctrl">
+          <script type="text/ng-template" id="youthRacing.html">
+              <div class="modal-header">
+                  <h3 class="modal-title" id="modal-title">YOUTH IMPACT RACING LOGO</h3>
+              </div>
+<!-- BODY -->
+              <div class="modal-body" id="modal-body">
+                <img class="imageHeader" src="/assets/yir_4.jpg">
+                <img class="imageHeader" src="/assets/yir_1.jpg">
+                <img class="imageHeader" src="/assets/yir_2.jpg">
+                <img class="imageHeader" src="/assets/yir_6.jpg">
+              </div>
+<!-- FOOTER -->
+              <div class="modal-footer">
+                <button class="btn btn-primary" type="button" ng-click="$ctrl.ok()">BACK TO PROJECTS</button>
+              </div>
+          </script>
+      </div>
+
+<!-- =========== WELCOME BROCHURE ========== -->
+
+      <div ng-controller="ModalDemoCtrl as $ctrl">
+          <script type="text/ng-template" id="brochure.html">
+              <div class="modal-header">
+                  <h3 class="modal-title" id="modal-title">WELCOME BROCHURE</h3>
+              </div>
+<!-- BODY -->
+              <div class="modal-body" id="modal-body">
+                <img class="imageHeader" src="/assets/brochure_1.jpg">
+                <img class="imageHeader" src="/assets/brochure_2.jpg">
+                <img class="imageHeader" src="/assets/brochure_3.jpg">
+              </div>
+<!-- FOOTER -->
+              <div class="modal-footer">
+                <button class="btn btn-primary" type="button" ng-click="$ctrl.ok()">BACK TO PROJECTS</button>
+              </div>
+          </script>
+      </div>
+
+<!-- =========== MN LOGO ========== -->
+
+      <div ng-controller="ModalDemoCtrl as $ctrl">
+          <script type="text/ng-template" id="mn.html">
+              <div class="modal-header">
+                  <h3 class="modal-title" id="modal-title">MN LOGO</h3>
+              </div>
+<!-- BODY -->
+              <div class="modal-body" id="modal-body">
+                <img class="imageHeader" src="/assets/mn_logo.jpg">
+              </div>
+<!-- FOOTER -->
+              <div class="modal-footer">
+                  <button class="btn btn-primary" type="button" ng-click="$ctrl.ok()">BACK TO PROJECTS</button>
+              </div>
+          </script>
+      </div>
+
+<!-- =========== KIDS POSTCARD ========== -->
+
+      <div ng-controller="ModalDemoCtrl as $ctrl">
+          <script type="text/ng-template" id="kids.html">
+              <div class="modal-header">
+                  <h3 class="modal-title" id="modal-title">SUNDAY SCHOOL POSTCARD</h3>
+              </div>
+<!-- BODY -->
+              <div class="modal-body" id="modal-body">
+                <img class="imageHeader" src="/assets/kids_2.jpg">
+              </div>
+<!-- FOOTER -->
+              <div class="modal-footer">
+                  <button class="btn btn-primary" type="button" ng-click="$ctrl.ok()">BACK TO PROJECTS</button>
+              </div>
+          </script>
+      </div>
+
+<!-- =========== GRAFFITI ART ========== -->
+
+      <div ng-controller="ModalDemoCtrl as $ctrl">
+          <script type="text/ng-template" id="graff.html">
+              <div class="modal-header">
+                  <h3 class="modal-title" id="modal-title">GRAFFITI ART</h3>
+              </div>
+<!-- BODY -->
+              <div class="modal-body" id="modal-body">
+                <img class="imageHeader" src="/assets/graff_2.jpg">
+              </div>
+<!-- FOOTER -->
+              <div class="modal-footer">
+                  <button class="btn btn-primary" type="button" ng-click="$ctrl.ok()">BACK TO PROJECTS</button>
+              </div>
+          </script>
+      </div>
+
+<!-- =========== STRAWBERRY ILLUSTRATION ========== -->
+
+      <div ng-controller="ModalDemoCtrl as $ctrl">
+          <script type="text/ng-template" id="straw.html">
+              <div class="modal-header">
+                  <h3 class="modal-title" id="modal-title">STRAWBERRY ILLUSTRATION</h3>
+              </div>
+<!-- BODY -->
+              <div class="modal-body" id="modal-body">
+                <img class="imageHeader" src="/assets/straw_2.jpg">
+              </div>
+<!-- FOOTER -->
+              <div class="modal-footer">
+                  <button class="btn btn-primary" type="button" ng-click="$ctrl.ok()">BACK TO PROJECTS</button>
+              </div>
+          </script>
+      </div>
+
+<!-- =========== CAFE INVITE ========== -->
+
+      <div ng-controller="ModalDemoCtrl as $ctrl">
+          <script type="text/ng-template" id="invite.html">
+              <div class="modal-header">
+                  <h3 class="modal-title" id="modal-title">CAFE INVITE</h3>
+              </div>
+<!-- BODY -->
+              <div class="modal-body" id="modal-body">
+                <img class="imageHeader" src="/assets/invite_2.jpg">
+              </div>
+<!-- FOOTER -->
+              <div class="modal-footer">
+                  <button class="btn btn-primary" type="button" ng-click="$ctrl.ok()">BACK TO PROJECTS</button>
+              </div>
+          </script>
+      </div>
+
+<!-- =========== NEXGEN LOGO ========== -->
+
+      <div ng-controller="ModalDemoCtrl as $ctrl">
+          <script type="text/ng-template" id="nexgen.html">
+              <div class="modal-header">
+                  <h3 class="modal-title" id="modal-title">NEXGEN LOGO</h3>
+              </div>
+<!-- BODY -->
+              <div class="modal-body" id="modal-body">
+                <img class="imageHeader" src="/assets/nexgen_2.jpg">
+              </div>
+<!-- FOOTER -->
+              <div class="modal-footer">
+                  <button class="btn btn-primary" type="button" ng-click="$ctrl.ok()">BACK TO PROJECTS</button>
+              </div>
+          </script>
+      </div>
+
+<!-- =========== BOUNDARY WATERS ========== -->
+
+      <div ng-controller="ModalDemoCtrl as $ctrl">
+          <script type="text/ng-template" id="bound.html">
+              <div class="modal-header">
+                  <h3 class="modal-title" id="modal-title">PENCIL DRAWING</h3>
+              </div>
+<!-- BODY -->
+              <div class="modal-body" id="modal-body">
+                <img class="imageHeader" src="/assets/bound_2.jpg">
+                <img class="imageHeader" src="/assets/bound_3.jpg">
+              </div>
+<!-- FOOTER -->
+              <div class="modal-footer">
+                  <button class="btn btn-primary" type="button" ng-click="$ctrl.ok()">BACK TO PROJECTS</button>
+              </div>
+          </script>
+      </div>
+
+<!-- =========== QUENCH ========== -->
+
+      <div ng-controller="ModalDemoCtrl as $ctrl">
+          <script type="text/ng-template" id="quench.html">
+              <div class="modal-header">
+                  <h3 class="modal-title" id="modal-title">QUENCH LOGO</h3>
+              </div>
+<!-- BODY -->
+              <div class="modal-body" id="modal-body">
+                <img class="imageHeader" src="/assets/quench_2.jpg">
+              </div>
+<!-- FOOTER -->
+              <div class="modal-footer">
+                  <button class="btn btn-primary" type="button" ng-click="$ctrl.ok()">BACK TO PROJECTS</button>
+              </div>
+          </script>
+      </div>
+
+<!-- =========== BOB ========== -->
+
+      <div ng-controller="ModalDemoCtrl as $ctrl">
+          <script type="text/ng-template" id="bob.html">
+              <div class="modal-header">
+                  <h3 class="modal-title" id="modal-title">WHAT ABOUT BOB?</h3>
+              </div>
+<!-- BODY -->
+              <div class="modal-body" id="modal-body">
+                <img class="imageHeader" src="/assets/bob_2.jpg">
+              </div>
+<!-- FOOTER -->
+              <div class="modal-footer">
+                  <button class="btn btn-primary" type="button" ng-click="$ctrl.ok()">BACK TO PROJECTS</button>
+              </div>
+          </script>
+      </div>
+
+<!-- =========== SOFTBALL LOGO ========== -->
+
+      <div ng-controller="ModalDemoCtrl as $ctrl">
+          <script type="text/ng-template" id="jayf.html">
+              <div class="modal-header">
+                  <h3 class="modal-title" id="modal-title">SOFTBALL LOGO</h3>
+              </div>
+<!-- BODY -->
+              <div class="modal-body" id="modal-body">
+                <img class="imageHeader" src="/assets/soft_logo.jpg">
+              </div>
+<!-- FOOTER -->
+              <div class="modal-footer">
+                  <button class="btn btn-primary" type="button" ng-click="$ctrl.ok()">BACK TO PROJECTS</button>
+              </div>
+          </script>
+      </div>
+
+<!-- ===========  HANDMADE PORTFOLIO ========== -->
+
+      <div ng-controller="ModalDemoCtrl as $ctrl">
+          <script type="text/ng-template" id="port.html">
+              <div class="modal-header">
+                  <h3 class="modal-title" id="modal-title">HANDMADE PORTFOLIO</h3>
+              </div>
+<!-- BODY -->
+              <div class="modal-body" id="modal-body">
+                <img class="imageHeader" src="/assets/port_2.jpg">
+              </div>
+<!-- FOOTER -->
+              <div class="modal-footer">
+                  <button class="btn btn-primary" type="button" ng-click="$ctrl.ok()">BACK TO PROJECTS</button>
+              </div>
+          </script>
+      </div>
+
+  </body>
+
+  <div class="linkDiv">
+    <a href="https://www.linkedin.com/in/waldroncraig"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
+    <a href="https://github.com/craigjwaldron"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+    <a href="https://codepen.io/craigdubya/"><i class="fa fa-codepen fa-2x" aria-hidden="true"></i></a>
+  </div>
+
+</html>
