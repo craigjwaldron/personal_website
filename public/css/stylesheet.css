@@ -76,6 +76,16 @@ a:active {
   margin-bottom: 3em;
 }
 
+.projectText {
+  padding: 7em 2em 7em 2em;
+  font-size: 1.5em;
+  background-color: #425462;
+  color: #FFF;
+  font-weight: 100;
+  letter-spacing: .1em;
+  margin: 0px;
+}
+
 .ghost-button-transition-2:hover,
 .ghost-button-transition-2:active {
    color: white;
