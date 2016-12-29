@@ -110,6 +110,23 @@ $ctrl.nl = function (size) {
     });
 };
 
+$ctrl.hope = function (size) {
+  var modalInstance = $uibModal.open({
+    animation: $ctrl.animationsEnabled,
+    ariaLabelledBy: 'modal-title',
+    ariaDescribedBy: 'modal-body',
+    templateUrl: 'hope.html',
+    controller: 'ModalInstanceCtrl',
+    controllerAs: '$ctrl',
+    size: size,
+    resolve: {
+      items: function () {
+        return $ctrl.items;
+      }
+    }
+  });
+};
+
   $ctrl.port = function (size) {
     var modalInstance = $uibModal.open({
       animation: $ctrl.animationsEnabled,
