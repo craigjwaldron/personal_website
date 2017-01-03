@@ -191,7 +191,7 @@ a:focus, a:hover {
 }
 
 .skillsDiv {
-  background-color: #82A4BF;
+  /*background-image: url("../assets/skills_2.jpg");*/
   text-align: center;
   float: none;
   margin-right: auto;
@@ -207,7 +207,7 @@ a:focus, a:hover {
 }
 
 .projectDiv {
-  background-color: #425462;
+  background-color: #0b9db8;
   margin-bottom: 10px;
 }
 
@@ -220,7 +220,7 @@ a:focus, a:hover {
   margin-right: auto;
   margin-left: auto;
   padding: 20px;
-  background: #425462;
+  background: #01628b;
   color: #82A4BF;
 }
 
@@ -284,7 +284,7 @@ a:focus, a:hover {
 /*BOOTSTRAP CUSTOMIZATION*/
 
 .jumbotron {
-  background: #425462;
+  background: #01628b;
   margin: 0px;
   height:100vh;
   font-family: 'Maven Pro', sans-serif;
