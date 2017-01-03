@@ -143,6 +143,7 @@ a:active {
 }
 
 .nameHeader {
+  color: #5c5c5c;
   padding: 0px;
   margin: 0px;
   font-weight: 900;
@@ -181,7 +182,7 @@ a:focus, a:hover {
 }
 
 .introDiv {
-  color: #FFFFFF;
+  color: #FFF;
   text-align: center;
   float: none;
   margin-right: auto;
@@ -196,19 +197,18 @@ a:focus, a:hover {
   float: none;
   margin-right: auto;
   margin-left: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 /*skills image responsive*/
 .skillsPhoto {
   max-width: 100%;
   height: auto;
-  margin-top: 5px;
-  margin-bottom: 10px;
 }
 
 .projectDiv {
-  background-color: #0b9db8;
-  margin-bottom: 10px;
+  background-color: #034e81;
 }
 
 .meDiv {
@@ -220,8 +220,8 @@ a:focus, a:hover {
   margin-right: auto;
   margin-left: auto;
   padding: 20px;
-  background: #01628b;
-  color: #82A4BF;
+  background: #FFF;
+  color: #5c5c5c;
 }
 
 .selfPort {
@@ -232,7 +232,7 @@ a:focus, a:hover {
 }
 
 .picDiv {
-  height: 80vh;
+  height: 100vh;
   background-size: cover;
   background-image: url("../assets/photo_self.jpg");
   background-position: center;
@@ -264,8 +264,21 @@ a:focus, a:hover {
 
 .meTitle {
   font-weight: bold;
-  color: #425462;
+  color: #5c5c5c;
   font-family: century gothic, gill sans;
+  padding-top: 1em;
+  padding-bottom: .5em;
+
+}
+
+.borderTitle {
+    border-bottom: 2px solid #a9a9a9;
+    width: 280px;
+    margin-bottom: 2.5em;
+}
+
+.mePara {
+  margin-bottom: 2em;
 }
 
 .introMe {
@@ -284,7 +297,7 @@ a:focus, a:hover {
 /*BOOTSTRAP CUSTOMIZATION*/
 
 .jumbotron {
-  background: #01628b;
+  background: #b0b0b0;
   margin: 0px;
   height:100vh;
   font-family: 'Maven Pro', sans-serif;
@@ -299,6 +312,7 @@ a:focus, a:hover {
   box-shadow: none;
   background-color: transparent;
   padding: 0px;
+  margin: 0px;
 }
 
 .thumbnail .overlay {
@@ -339,13 +353,19 @@ a:focus, a:hover {
 }
 
 .allProjects {
- padding: 8% 10% 8% 10%;
- background-color: #425462;
+ /*padding: 8% 10% 8% 10%;*/
+ background-color: #034e81;
 }
 
 .col-md-4 {
   margin: 0px;
+  padding: 0px;
 }
+
+/*.col-md-6 {
+  margin: 0px;
+  padding: 0px;
+}*/
 
 .hovereffect {
   width: 100%;
@@ -417,7 +437,7 @@ a:focus, a:hover {
 }
 
 .hovereffect a, .hovereffect p {
-  color: #FFF;
+  color: #04839b;
   opacity: 0;
   filter: alpha(opacity=0);
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
@@ -434,7 +454,7 @@ a:focus, a:hover {
 }
 
 .hovereffect a, .hovereffect h1 {
-  color: #FFF;
+  color: #5c5c5c;
   opacity: 0;
   filter: alpha(opacity=0);
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
