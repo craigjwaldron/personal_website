@@ -219,7 +219,8 @@ a:focus, a:hover {
   text-align: center;
   margin-right: auto;
   margin-left: auto;
-  padding: 20px;
+  min-height: 12em;
+  padding: 3em;
   background: #FFF;
   color: #5c5c5c;
 }
@@ -408,7 +409,7 @@ a:focus, a:hover {
 
 .hovereffect h2 {
   text-transform: uppercase;
-  color: #fff;
+  color: #FFF;
   text-align: center;
   position: relative;
   font-size: 17px;
@@ -437,7 +438,7 @@ a:focus, a:hover {
 }
 
 .hovereffect a, .hovereffect p {
-  color: #04839b;
+  color: #FFF;
   opacity: 0;
   filter: alpha(opacity=0);
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
@@ -454,7 +455,7 @@ a:focus, a:hover {
 }
 
 .hovereffect a, .hovereffect h1 {
-  color: #5c5c5c;
+  color: #FFF;
   opacity: 0;
   filter: alpha(opacity=0);
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
