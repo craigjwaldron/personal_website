@@ -264,7 +264,7 @@ a:focus, a:hover {
 }
 
 .meTitle {
-  font-weight: bold;
+  font-weight: 500;
   color: #5c5c5c;
   font-family: century gothic, gill sans;
   padding-top: 1em;
