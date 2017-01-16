@@ -233,7 +233,7 @@ a:focus, a:hover {
 }
 
 .picDiv {
-  height: 100vh;
+  height: 80vh;
   background-size: cover;
   background-image: url("../assets/photo_self.jpg");
   background-position: center;
@@ -269,7 +269,7 @@ a:focus, a:hover {
   font-family: century gothic, gill sans;
   padding-top: 1em;
   padding-bottom: .5em;
-
+  margin-right: 2em;
 }
 
 .borderTitle {
@@ -280,6 +280,7 @@ a:focus, a:hover {
 
 .mePara {
   margin-bottom: 2em;
+  margin-right: 6em;
 }
 
 .introMe {
