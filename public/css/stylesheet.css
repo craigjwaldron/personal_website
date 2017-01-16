@@ -192,7 +192,7 @@ a:focus, a:hover {
 }
 
 .skillsDiv {
-  background-image: url("../assets/skills_3.jpg");
+  background-color: #035086;
   text-align: center;
   float: none;
   margin-right: auto;
@@ -233,7 +233,7 @@ a:focus, a:hover {
 }
 
 .picDiv {
-  height: 80vh;
+  height: 90vh;
   background-size: cover;
   background-image: url("../assets/photo_self.jpg");
   background-position: center;
@@ -272,10 +272,32 @@ a:focus, a:hover {
   margin-right: 2em;
 }
 
+.meTitle2 {
+  text-align: center;
+  margin-right: 0px;
+  padding-top: 0px;
+}
+
+.projectTitle {
+  text-align: center;
+}
+
+.projects {
+  text-align: center;
+}
+
 .borderTitle {
-    border-bottom: 2px solid #a9a9a9;
-    width: 280px;
+    border-bottom: 1px solid #a9a9a9;
+    width: 10em;
     margin-bottom: 2.5em;
+}
+
+.borderTitle2 {
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 1em;
+  width: 3em;
 }
 
 .mePara {
