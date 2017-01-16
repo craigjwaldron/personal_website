@@ -219,7 +219,6 @@ a:focus, a:hover {
   text-align: center;
   margin-right: auto;
   margin-left: auto;
-  min-height: 12em;
   padding: 3em;
   background: #FFF;
   color: #5c5c5c;
@@ -230,6 +229,10 @@ a:focus, a:hover {
   padding-right: 0px !important;
   min-width: 100%;
    min-height: 100%;
+}
+
+.fa-2x {
+  font-size: 2.2em !important;
 }
 
 .picDiv {
