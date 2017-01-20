@@ -24,6 +24,11 @@ hr {
   width: 15em;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .socialLinks {
   color:inherit;
   text-decoration: none;
@@ -310,7 +315,7 @@ a:focus, a:hover {
 
 .mePara {
   margin-bottom: 2em;
-  margin-right: 6em;
+  max-width: 30em;
 }
 
 .introMe {
